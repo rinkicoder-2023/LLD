@@ -7,7 +7,14 @@ public class Product {
     private Integer id;
     private String name;
     private Category category;
-    private BigDecimal price;
+    private double price;
+
+    public Product(Integer id, String name, Category category, double price) {
+        this.id = id;
+        this.name = name;
+        this.category = category;
+        this.price = price;
+    }
 
     public Integer getId() {
         return id;
@@ -33,11 +40,11 @@ public class Product {
         this.category = category;
     }
 
-    public BigDecimal getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(BigDecimal price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 }

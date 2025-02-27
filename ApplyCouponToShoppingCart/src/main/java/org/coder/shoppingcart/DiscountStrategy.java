@@ -1,5 +1,5 @@
 package org.coder.shoppingcart;
 
 public interface DiscountStrategy {
-    double applyDiscount(ShoppingCart shoppingCart);
+    double applyDiscount(double total, ShoppingCart shoppingCart);
 }
